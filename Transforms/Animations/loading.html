@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 200px;
+
+        }
+
+        .child {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: aqua;
+            animation: bounce 1s linear 0s infinite alternate;
+        }
+
+        .one {
+            background-color: brown;
+            animation-delay: 1s;
+            animation-duration: 2;
+
+
+        }
+
+        .two {
+            background-color: blue;
+            animation-delay: 1.5s;
+            animation-duration: 2;
+
+        }
+
+        .three {
+            background-color: yellow;
+            animation-delay: 2s;
+            animation-duration: 2;
+        }
+
+        .four {
+            background-color: chartreuse;
+            animation-delay: 2.2s;
+            animation-duration: 2;
+        }
+
+        .five {
+            background-color: chocolate;
+            animation-delay: 2.5s;
+            animation-duration: 2;
+        }
+
+        .six {
+            background-color: darkgreen;
+            animation-delay: 2.8s;
+            animation-duration: 2;
+        }
+
+        .seven {
+            background-color: darkviolet;
+            animation-delay: 3s;
+            animation-duration: 2;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(-100px);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="child one"></div>
+        <div class="child two"></div>
+        <div class="child three"></div>
+        <div class="child four"></div>
+        <div class="child five"></div>
+        <div class="child six"></div>
+        <div class="child seven"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        body {
+            background-color: black;
+
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            border: 3px solid green;
+            background-color: yellow;
+            border-radius: 50%;
+
+            /* animation-name: key;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 3; */
+            animation: key 3s linear 0s infinite forwards;
+
+        }
+
+        @keyframes key {
+
+            0%,
+            100% {
+                top: 0px;
+                left: 0px;
+                position: relative;
+            }
+
+            25% {
+                top: 0px;
+                left: 200px;
+                position: relative;
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+                position: relative;
+            }
+
+            75% {
+                top: 200px;
+                right: 200px;
+                position: relative;
+            }
+
+            /* 85% {
+                top: 200px;
+                right: 100px;
+                position: relative;
+            } */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+    </div>
+
+</body>
+
+</html>
